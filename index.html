@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
+    <title>Responsive Profile Card</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-900 flex items-center justify-center min-h-screen">
-    <div class="relative">
+<body class="bg-gray-900 min-h-screen flex items-center justify-center">
+    <!-- Main Wrapper -->
+    <div class="flex flex-col lg:flex-row items-center lg:items-start justify-center lg:justify-center lg:space-x-8 h-full lg:h-auto">
         
-        <div class="absolute left-0 top-0 h-full bg-gray-500 py-10 px-6 w-52">
+        <!-- Sidebar -->
+        <div class="bg-gray-500 py-10 px-6 w-full lg:w-52 flex-shrink-0 text-center lg:text-left">
             <ul class="text-gray-300">
                 <li class="mb-2">
                     <a href="aboutme.html" class="block transition duration-300 text-lg text-gray-300 hover:text-blue-500 border-b border-gray-300 pb-2">
@@ -45,23 +47,26 @@
             </ul>
         </div>
         
-        <div class="bg-gray-800 rounded-lg shadow-lg p-8 max-w-md ml-56">
+        <!-- Profile Card -->
+        <div class="bg-gray-800 rounded-lg shadow-lg p-6 sm:p-8 max-w-full lg:max-w-md w-full mt-8 lg:mt-0">
             <div class="flex items-center justify-center mb-6">
-                <img class="w-32 h-32 rounded-full ring-4 ring-gray-400" src="images/pp.png" alt="Profile Image">
+                <img class="w-24 h-24 sm:w-32 sm:h-32 rounded-full ring-4 ring-gray-400" src="images/pp.png" alt="Profile Image">
             </div>
             <div class="text-center text-white">
-                <h1 class="text-3xl font-semibold">Jigme Ngawang Chogyal</h1>
+                <h1 class="text-2xl sm:text-3xl font-semibold">Jigme Ngawang Chogyal</h1>
                 <p class="text-sm text-gray-300 mt-1">Low key</p>
-                <p class="mt-4 text-gray-300 text-center">I am an avid gamer who loves immersing myself in different worlds, and I enjoy watching anime for its captivating stories and unique art styles. Combining these passions, I often find inspiration and creativity in both gaming and anime.</p>
+                <p class="mt-4 text-gray-300 text-sm sm:text-base">
+                    I am an avid gamer who loves immersing myself in different worlds, and I enjoy watching anime for its captivating stories and unique art styles. Combining these passions, I often find inspiration and creativity in both gaming and anime.
+                </p>
             </div>
 
-            <div class="mt-6 flex justify-center space-x-4">
+            <div class="mt-6 flex flex-wrap justify-center space-x-4 space-y-2 sm:space-y-0">
                 <a href="https://x.com/Itsyoboi_Jigme" class="text-blue-500"><i class="fab fa-twitter fa-2x"></i></a>
                 <a href="https://www.snapchat.com/add/itsyoboijigme?share_id=MFe87VqIkyU&locale=en-US" class="text-yellow-500"><i class="fab fa-snapchat fa-2x"></i></a>
                 <a href="www.linkedin.com/in/jigme-ngawang-chogyal-34981932a" class="text-blue-700"><i class="fab fa-linkedin fa-2x"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100073055359195" class="text-blue-600"><i class="fab fa-facebook fa-2x"></i></a>
                 <a href="https://github.com/JigmeZ" class="text-gray-500"><i class="fab fa-github fa-2x"></i></a>
-                <a href="jigmechogyal2006@gmail.com" class="text-gray-400"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="mailto:jigmechogyal2006@gmail.com" class="text-gray-400"><i class="fas fa-envelope fa-2x"></i></a>
             </div>
         </div>
     </div>
