@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+    <div id="main-container" class="bg-gray-800 text-white max-w-3xl p-6 rounded-lg shadow-lg space-y-6">
+        <div class="flex justify-between items-center space-x-4">
+            <a href="index.html" class="hover:text-blue-300 underline">
+                <img src="images/return icon.png" alt="Return Icon" class="w-10 h-10">
+            </a>
+            <h2 id="title" class="text-3xl font-bold">Achievements</h2>
+            <div class="w-24 h-24 rounded-full overflow-hidden border-4 border-gray-700">
+                <img src="images/achievement.png" alt="Achievement Icon" class="w-full h-full object-cover">
+            </div>
+        </div>
+
+        <div id="content" class="bg-gray-700 p-6 rounded-md space-y-4">
+            <ul class="space-y-6 text-sm leading-relaxed">
+                <li class="group transition duration-500 ease-in-out">
+                    <span class="group-hover:bg-gray-600 group-hover:rounded-lg group-hover:p-2 transition duration-500 ease-in-out">
+                        <span class="group-hover:text-blue-500 transition duration-500 ease-in-out">Volunteering Excellence</span>: Dedicated service in community projects.
+                    </span>
+                </li>
+                <li class="group transition duration-500 ease-in-out">
+                    <span class="group-hover:bg-gray-600 group-hover:rounded-lg group-hover:p-2 transition duration-500 ease-in-out">
+                        <span class="group-hover:text-blue-500 transition duration-500 ease-in-out">Leadership Experience</span>: Two years as Vice President of Changjiji Youth Center.
+                    </span>
+                </li>
+                <li class="group transition duration-500 ease-in-out">
+                    <span class="group-hover:bg-gray-600 group-hover:rounded-lg group-hover:p-2 transition duration-500 ease-in-out">
+                        <span class="group-hover:text-blue-500 transition duration-500 ease-in-out">Active Memberships</span>: Contributions to AFHS and Super FabLab initiatives.
+                    </span>
+                </li>
+                <li class="group transition duration-500 ease-in-out">
+                    <span class="group-hover:bg-gray-600 group-hover:rounded-lg group-hover:p-2 transition duration-500 ease-in-out">
+                        <span class="group-hover:text-blue-500 transition duration-500 ease-in-out">High School Achievements</span>: Academic distinctions and extracurricular excellence.
+                    </span>
+                </li>
+                <li class="group transition duration-500 ease-in-out">
+                    <span class="group-hover:bg-gray-600 group-hover:rounded-lg group-hover:p-2 transition duration-500 ease-in-out">
+                        <span class="group-hover:text-blue-500 transition duration-500 ease-in-out">Sports Achievements</span>: Competed in basketball, boxing, rifle shooting, football, and chess.
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Title fade-in animation
+        anime({
+            targets: '#title',
+            opacity: [0, 1],
+            duration: 2000,
+            easing: 'easeInOutQuad'
+        });
+
+        // List items staggered fade animation
+        anime({
+            targets: '#content > ul > li',
+            opacity: [0, 1],
+            translateY: [20, 0],
+            delay: anime.stagger(300),
+            duration: 1200,
+            easing: 'easeInOutQuad'
+        });
+    </script>
+</body>
+</html>
